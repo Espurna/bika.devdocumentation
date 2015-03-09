@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Contents:}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Development Documentation}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Introduction}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Types of Releases}{1}{subsection.1.1.2}
+\contentsline {subsubsection}{Minor releases (3.1.x to 3.1.y). Updates}{1}{subsubsection*.3}
+\contentsline {subsubsection}{Major releases (3.x to 3.y). Upgrades}{1}{subsubsection*.4}
+\contentsline {subsubsection}{Releases and Branches}{1}{subsubsection*.5}
+\contentsline {subsubsection}{Custom-made features and Pull Requests}{2}{subsubsection*.6}
