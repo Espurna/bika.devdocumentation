@@ -11,6 +11,5 @@ BikaLIMS's Documentation
    :maxdepth: 1
    
    dev_doc
-   DevelopmentDocumentation/ReleaseCycle
 
 
