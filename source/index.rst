@@ -3,13 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-========================
-BikaLIMS's Documentation
-========================
+===================================
+BikaLIMS's Developers Documentation
+===================================
 
 .. toctree::
    :maxdepth: 1
    
-   dev_doc
-
-
+   release_cycle
+   developer_guidelines
+   developing_bika_lims
