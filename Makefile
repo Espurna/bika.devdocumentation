@@ -172,9 +172,9 @@ initlocales:
 updatelocales:
 # 	rm doctree, otherwise html is not changed...
 	cd ../documentation && rm -r doctrees
-# 	It generates the .mo files from po files inside source/locale
+# 	It generates the .mo files from po files inside source/locale.
 	cd source && sphinx-intl build 
-#	make translated document
+#	make translated document.
 	make -e SPHINXOPTS="-D language='es'" htmllang LANG=es
 	make -e SPHINXOPTS="-D language='en'" htmllang LANG=en
 
