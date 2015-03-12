@@ -1,5 +1,6 @@
 This branch is under contruction
 
+
 This branch contains the .rst files, the Makefile and the transtaltions (.po) inside local folder. To generate the build folder (where the documentation will be placed) and the different language versions, execute the following instruction:
      
      make initlocales -> to generate the locales and its html
