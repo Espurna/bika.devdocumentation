@@ -13,4 +13,4 @@ msgstr ""
 
 #: ../../bika.sphinx/source/index.rst:8
 msgid "BikaLIMS's Developers Documentation"
-msgstr "espanishers"
+msgstr "espanisherssss"
