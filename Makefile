@@ -10,7 +10,7 @@ BUILDDIR      = ../documentation
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
-ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
+ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source # source = sourcedir
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
@@ -42,7 +42,7 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	$(SPHINXBUILD) -b html -a $(ALLSPHINXOPTS) $(BUILDDIR)/html/es
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
@@ -151,3 +151,17 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
+
+initlocales:
+	make gettext # Generates .pot files and the doctree
+	cd source && sphinx-intl update -p ../../documentation/locale -l es #-p defines the .pot folder source
+									    # In our case is ../documentation
+									    #-d the locale_dir (also defined in conf.py)
+									    #-d defines the target folder to locate the .po files. These files should live in a git folder because are the translated ones. In our case the folder is found in source/locale
+	cd source && sphinx-intl build # It generates the .mo files from po files inside source/locale
+	make -e SPHINXOPTS="-D language='es'" html # make translated document
+
+updatelocales:
+	cd ../documentation && rm -r doctrees
+	cd source && sphinx-intl build # It generates the .mo files from po files inside source/locale
+	make -e SPHINXOPTS="-D language='es'" html # make translated document

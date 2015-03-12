@@ -244,3 +244,7 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
+
+# Locales configuration
+locale_dirs = ['locale/'] # The place where .pot files will be localed
+gettext_compact = True     # optional.

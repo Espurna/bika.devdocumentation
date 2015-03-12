@@ -1,0 +1,17 @@
+This branch contains the .rst files, the Makefile and the transtaltions inside local folder. To generate the build folder (where the documentation will be placed) and the different language versions, execute the following instruction:
+     
+     make initlocales -> to generate the locales
+     make updatelocales -> to update the transtaltions after .po modifications
+     make html -> to generate the html
+     make latexpdf -> to generate the pdf
+
+
+
+
+
+
+
+
+
+
+"The lab is open"

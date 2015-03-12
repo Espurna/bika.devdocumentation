@@ -1,0 +1,237 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: BikaLIMS 3.1.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-12 10:24\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:4
+msgid "Bika LIMS Developer Guidelines"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:8
+msgid "Introduction"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:10
+msgid ""
+"Software development conventions are important in a multi-developer projects"
+" and help developers read and understand each other's code. Please try to "
+"follow the guidelines described here. Your cooperation improves the "
+"effectiveness of the collaboration."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:12
+msgid ""
+"Please review the community channels for assistance on the Community_ page "
+"if you haven't done so yet."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:18
+msgid "Release Cycle"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:20
+msgid ""
+"Bika LIMS project developers are committed to `release early, release often "
+"(RERO)`_ to get better feedback from the user community and increase the "
+"quality of the system both from technical and functional perspectives. "
+"Please see `Release Cycle`_ for more details. Pay special attention to "
+"section `Releases and Branches`_."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:26
+msgid "Branches and Branch-per-feature (BPF) approach"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:28
+msgid ""
+"Bika LIMS software development uses a Branch-per-feature approach. Before "
+"continuing, please read the `A successful Git branching model (Vincent "
+"Driessen, 2010)`_, `Branch-per-feature (Adam Dimirtuk, 2012)`_ and `A "
+"pragmatic guide to the Branch Per Feature git branching strategy (Katherine "
+"Bailey, 2013)`_."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:34
+msgid "BPF adheres to git-flow with additional constraints:"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:36
+msgid ""
+"**Committing directly to hotfix branches is not permitted** All changes to "
+"hotfix branches are submitted as pull requests, and the complete test log "
+"(with no failures) must be included in the pull request text."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:38
+msgid ""
+"**Only of trivial modifications may be Committed directly to the develop "
+"branch**"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:40
+msgid "When"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:42
+msgid "Multiple files or functions are modified"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:43
+msgid "The modification caused refactoring not directly related"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:44
+msgid "More than 100 lines are changed, also for simple modifications"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:45
+msgid "You favour a code review or have questions"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:47
+msgid "the commit is not trivial, please branch from develop."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:49
+msgid ""
+"**BPF branches are not be merged into develop until automated tests pass**"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:51
+msgid ""
+"**BPF branches by a single coder must be reviewed by at least one other** "
+"And should not be merged into develop by the original coder"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:55
+msgid "hotfix/next branch"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:58
+msgid ""
+"Only bug fixes and very small enhancements are allowed in the hotfix/next "
+"branch. This branch is only used for updates (minor releases) and is "
+"regularly merged to develop."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:60
+msgid ""
+"If you need to fix a bug, create a fork from hotfix/next and fix the bug "
+"there. When finished, do a pull request to hotfix/next, including the "
+"Tracker_ ID, a description of the fix and the full bika.lims Robot Test log "
+"after running it."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:64
+msgid "Remember also to update the CHANGELOG.txt."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:66
+msgid ""
+"If all goes well, the Bika LIMS source code maintainers will merge your pull"
+" request into hotfix/next."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:70
+msgid "develop branch"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:71
+msgid ""
+"The develop branch is the base for new features and enhancements. All "
+"branches per features (BPFs) must be created from develop."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:75
+msgid "Best Practice"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:78
+msgid "Adapted from `Kepler's project development guide`_"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:82
+msgid "**Try not to hinder other developers**"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:84
+msgid "Make sure code compiles and passes all tests before committing"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:85
+msgid ""
+"Minimise the impact on other developers, use the branch-per-features "
+"approach"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:87
+msgid "**Commits should be neat, portable and documented**"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:89
+msgid "Indent the code using spaces instead of tabs, 4 spaces per 'tab'"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:90
+msgid "80 Characters per line max"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:91
+msgid "Use meaningful, descriptive names for classes and variables"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:92
+msgid "Comment classes, methods and everything else. More is better"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:93
+msgid "Remove stale code not used"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:95
+msgid "**Communicate with other developers**"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:97
+msgid "Use the IRC channel and dev lists"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:98
+msgid ""
+"Commit frequently, in small and logically related patches with good log "
+"messages"
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:100
+msgid ""
+"In addition, please follow the `PEP-8 Style guide for Python Code`_ in "
+"general."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:102
+msgid ""
+"We also expect coders to write short, to-the-point methods that encapsulate "
+"a very specific behaviour, rather than long procedural functions."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:104
+msgid ""
+"If your methods are longer that 30-40 lines of code, or if they have "
+"extensive conditional blocks or switch statements, break them up into more "
+"methods."
+msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:106
+msgid ""
+"Related and equally important, is factoring common procedures into their own"
+" classes or methods. When you find yourself writing the same type of "
+"functionality more than once, it is time to refactor."
+msgstr ""
