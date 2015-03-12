@@ -37,7 +37,7 @@ BPF adheres to git-flow with additional constraints:
 
 **Only of trivial modifications may be Committed directly to the develop branch**
 
-When
+When:
 
     * Multiple files or functions are modified
     * The modification caused refactoring not directly related
