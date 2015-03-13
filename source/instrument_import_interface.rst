@@ -81,6 +81,7 @@ The parser is the class responsible for parsing the results file. Any parser mus
 In most cases, overriding the method `_parseline(self, line) <https://github.com/bikalabs/Bika-LIMS/blob/develop/bika/lims/exportimport/instruments/resultsimport.py#L187>`_  would be enough for a fully functional importer interface:
 
     .. code-block:: python
+
        def _parseline(self, line):
        """ Parses a line from the input CSV file and populates rawresults
            (look at getRawResults comment)
@@ -105,6 +106,7 @@ with header::
 a dictionary might be created as follows:
 
     .. code-block:: python
+
        {'D2': {'DefaultResult': 'Final Conc',
 	       'Remarks': '',
                'Resp': '5816',
@@ -119,6 +121,7 @@ Where D2 is an Analysis Service Keyword and the keys from the inner dictionary a
 b) **Add the previous dictionary to 'rawresults'** by using the method `_addRawResult(self, resid, values={}, override=False): <https://github.com/bikalabs/Bika-LIMS/blob/develop/bika/lims/exportimport/instruments/resultsimport.py#L57>`_
 
     .. code-block:: python
+
        self._addRawResult('QC13-0002-001', rawdict, False)
 
 where:
@@ -210,6 +213,7 @@ Excerpt of `WinescanCSVParser <https://github.com/bikalabs/Bika-LIMS/blob/develo
 You may notice that in this case, some additional data checks are performed: detection of duplicate records, empty results, orphan values, etc. The `Logger <https://github.com/bikalabs/Bika-LIMS/blob/develop/bika/lims/exportimport/instruments/logger.py>`_ top-level class in the hierarchy also provides some useful methods:
 
 .. code-block:: rest
+
  err(self, msg, numline=None, line=None)
  warn(self, msg, numline=None, line=None) 
  log(self, msg, numline=None, line=None)

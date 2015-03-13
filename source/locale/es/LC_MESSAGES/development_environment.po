@@ -66,15 +66,15 @@ msgid ""
 " forked source."
 msgstr ""
 
-#: ../../bika.sphinx/source/development_environment.rst:34
+#: ../../bika.sphinx/source/development_environment.rst:35
 msgid "Remember to run bin/buildout again."
 msgstr ""
 
-#: ../../bika.sphinx/source/development_environment.rst:36
+#: ../../bika.sphinx/source/development_environment.rst:37
 msgid "Next steps"
 msgstr ""
 
-#: ../../bika.sphinx/source/development_environment.rst:38
+#: ../../bika.sphinx/source/development_environment.rst:39
 msgid ""
 "Join the bika-developers list at http://lists.sourceforge.net/lists/listinfo"
 "/bika-developers, and the IRC channel at irc.freenode.net/#bika immediately."
@@ -82,7 +82,7 @@ msgid ""
 "customisation project."
 msgstr ""
 
-#: ../../bika.sphinx/source/development_environment.rst:40
+#: ../../bika.sphinx/source/development_environment.rst:41
 msgid ""
 "Read the excellent `Plone developer documentation "
 "<http://docs.plone.org/develop/index.html>`_."

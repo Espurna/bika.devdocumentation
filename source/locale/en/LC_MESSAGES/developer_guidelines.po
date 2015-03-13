@@ -76,10 +76,6 @@ msgid ""
 "branch**"
 msgstr ""
 
-#: ../../bika.sphinx/source/developer_guidelines.rst:40
-msgid "When"
-msgstr ""
-
 #: ../../bika.sphinx/source/developer_guidelines.rst:42
 msgid "Multiple files or functions are modified"
 msgstr ""
@@ -235,3 +231,10 @@ msgid ""
 " classes or methods. When you find yourself writing the same type of "
 "functionality more than once, it is time to refactor."
 msgstr ""
+
+#: ../../bika.sphinx/source/developer_guidelines.rst:40
+msgid "When:"
+msgstr ""
+
+#~ msgid "When"
+#~ msgstr ""

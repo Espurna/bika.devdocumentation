@@ -31,6 +31,7 @@ Steps to configuring a Bika LIMS development environment
 	      src/Bika-LIMS
 
        .. note::
+
 	  Remember to run bin/buildout again.
 
     6) Next steps
