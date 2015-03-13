@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = ../documentation
+BUILDDIR      = ../devdocumentation
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -159,8 +159,8 @@ doctest:
 initlocales:
 #	Generates .pot files and the doctree
 	make gettext 
-	cd source && sphinx-intl update -p ../../documentation/locale -l es -l en
-#	-p defines the .pot folder source. In our case is ../documentation. 
+	cd source && sphinx-intl update -p ../../devdocumentation/locale -l es -l en
+#	-p defines the .pot folder source. In our case is ../devdocumentation. 
 #	-d The locale_dir (also defined in conf.py) defines the target folder to locate the .po files. These files should live in a git folder because are the translated ones. In our case the folder is found in source/locale
 
 #	It generates the .mo files from po files inside source/locale
@@ -171,7 +171,7 @@ initlocales:
 
 updatelocales:
 # 	rm doctree, otherwise html is not changed...
-	cd ../documentation && rm -r doctrees
+	cd ../devdocumentation && rm -r doctrees
 # 	It generates the .mo files from po files inside source/locale.
 	cd source && sphinx-intl build 
 #	make translated document.
@@ -181,4 +181,4 @@ updatelocales:
 updatetext:
 #	It's used to udate .pot files by .rst changes.
 	make gettext
-	cd source && sphinx-intl update -p ../../documentation/locale -l es -l en
+	cd source && sphinx-intl update -p ../../devdocumentation/locale -l es -l en
