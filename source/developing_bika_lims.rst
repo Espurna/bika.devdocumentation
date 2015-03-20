@@ -49,3 +49,5 @@ Developing Bika LIMS
 
 .. include:: development_environment.rst
 .. include:: instrument_import_interface.rst
+.. include:: bika_json_api.rst
+.. include:: creating_new_report_templates.rst

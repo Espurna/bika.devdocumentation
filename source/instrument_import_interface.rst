@@ -298,6 +298,7 @@ The last step is to register the interface in the system, for which you only nee
 	       '<manufacturer>.<model>.<your_awesome_importer_interface>']
 
 Share your interface
+====================
 
 Bika LIMS is an Open Source project and your contributions are welcome. Do a `pull request <https://github.com/bikalabs/Bika-LIMS/pulls>`_ of your code and benefit all the community of users. If you don't know how to do this, you can either send your code to the `developers list`_.
 
